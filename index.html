@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alarm Clock</title>
+
+    <link rel="stylesheet" type="text/css" href="   https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Background WAVES -->
+      <div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+      </div>
+
+<!-- REAL TIME CLOCK AND ALARM -->
+    <center>
+        <div class="clock">
+            <div>
+                <span class="time" id="hrs">--</span>
+                <span class="colon">:</span>
+                <span class="time" id="mins">--</span>
+                <span class="colon">:</span>
+                <span class="time" id="secs">--</span>
+                <span class="time" id="AM-PM">&nbsp&nbsp --</span>
+            </div>
+           <hr style="color: whitesmoke; margin-top: -10px;">
+            <div class="ele-name d-flex justify-content-around">
+                <span class="name">Hour</span>
+                <span class="name"> Minute</span>
+                <span class="name"> Second</span>
+                <span class="name">session</span>
+            </div>
+            <hr style="color: whitesmoke; margin-top: 0px;">
+
+<!--ALARM CLOCK  -->
+            <div id ="set-alarm">Set Alarm : </div>
+            <div class="row d-flex justify-content-evenly" id="alarm-values">
+                <div class="col-3 alarm-hour">
+                    <select class="form-select bg-dark selected" aria-label="Default select example">
+                      <option value="hour"selected hidden>Hour</option>
+                     
+                    </select>
+                </div>
+                <div class="col-3 alarm-minute">
+                    <select class="form-select bg-dark selected" aria-label="Default select example">
+                      <option value="Minute" selected hidden>Minute</option>
+                      
+                    </select>
+                </div>
+                <div class="col-3 alarm-session">
+                    <select class="form-select bg-dark selected" aria-label="Default select example">
+                      <option value="session" selected hidden>session</option>
+                      
+                    </select>
+                </div>
+                 <div class="col-3 alarm-hour">
+                    <button type="button" class="btn bg-dark delete-btn" id="set-alarm-btn">Set alarm</button>
+
+                </div>
+                
+            </div>
+            <hr style="color: whitesmoke; margin-top: 10px;">
+
+ <!-- ALARMS -->
+             <div id = "all-alarms">Alarms :</div>
+             <div style=" height: 350px;" id = "alarm-list">
+                <ul id = "list">
+
+                </ul>
+             </div>
+
+
+
+
+        </div>
+    </center>
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src="script2.js" defer></script>
+
+</body>
+</html>
